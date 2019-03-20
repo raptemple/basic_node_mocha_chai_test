@@ -1,0 +1,26 @@
+{
+  "name": "basic_node_mocha_chai_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"./{,!(node_modules)/**/}*.test.js\"",
+    "test2": "mocha **/*.test.js",
+    "test-watch2": "nodemon --exec \"npm run test2\" ",
+    "test-watch": "nodemon --exec \"npm test\" "
+  },
+  "author": "Subin Shrestha",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "sinon": "^7.3.0",
+    "sinon-chai": "^3.3.0",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "rewire": "^4.0.1"
+  }
+}
