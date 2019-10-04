@@ -60,8 +60,8 @@ describe('Server Test Cases', () => {
 					expectjs(resp.body).not.eql([]); // Checking not an empty array
 					expectjs(resp.body).to.include.deep.members([
 						{
-							name: 'Puspita',
-							age: 48
+							name: 'Rose',
+							age: 30
 						}
 					]);
 				})

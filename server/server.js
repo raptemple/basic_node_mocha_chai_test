@@ -22,13 +22,13 @@ app.get('/error', (req, resp) => {
 
 app.get('/users', (req, resp) => {
 	let arrayOfUsers = [
-		{ name: "Subin", age: 30 },
-		{ name: "Puspita", age: 48 },
-		{ name: "Subarna", age: 48 }
+		{ name: "Rose", age: 30 },
+		{ name: "Jasmine", age: 75 },
+		{ name: "Cauliflower", age: 88 }
 	]
-	resp.send(arrayOfUsers)
+	resp.send(JSON.stringify((arrayOfUsers),null,'\t'))
 });
 
-app.listen(3000);
+app.listen(3030);
 
 module.exports = { app };
